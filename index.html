@@ -149,8 +149,6 @@
     .works { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; background: var(--line); }
     .work { position: relative; min-width: 0; padding: clamp(.75rem, 2.5vw, 1.35rem); background: var(--paper); }
     .art-button { position: relative; display: block; width: 100%; padding: 0; border: 0; border-radius: 14px; overflow: hidden; cursor: zoom-in; background: #edf1f3; box-shadow: 0 8px 24px rgba(11,31,50,.1); }
-    .art-button::after { content: "크게 보기"; position: absolute; right: .65rem; bottom: .65rem; padding: .35rem .65rem; border-radius: 999px; color: white; background: rgba(3,14,27,.78); font-size: .76rem; font-weight: 800; opacity: 0; transform: translateY(5px); transition: .2s ease; }
-    .art-button:hover::after, .art-button:focus-visible::after { opacity: 1; transform: none; }
     .art-button img { width: 100%; aspect-ratio: 210 / 297; object-fit: contain; background: #f1f0eb; transition: transform .35s ease; }
     .art-button:hover img { transform: scale(1.018); }
     .work-meta { padding: 1rem .25rem .35rem; }
@@ -216,7 +214,6 @@
       .work-meta { padding: .75rem .1rem .3rem; }
       .role { font-size: .7rem; letter-spacing: 0; }
       .art-button { border-radius: 9px; }
-      .art-button::after { display: none; }
       .top-button { width: 58px; height: 58px; }
     }
     @media (max-width: 390px) {
